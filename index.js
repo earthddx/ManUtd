@@ -26,7 +26,6 @@ slides.forEach((slide, index) => {
 function changeDots(dot){
     slides.forEach(slide=>{
         slide.classList.remove('active');
-
     });
     dot.classList.add('active');
 }
@@ -50,8 +49,8 @@ function nextSlide(pageNumber){
     .to(portfolio, 0.3,{backgroundImage:backgrounds[pageNumber]})
     .fromTo(currPage, 0.3, {opacity: 1, pointerEvents:'all'}, {opacity: 0, pointerEvents:'none'})
     .fromTo(nextPage, 0.3, {opacity: 0, pointerEvents:'none'}, {opacity: 1, pointerEvents:'all'},'-=0.3')
-    .fromTo(nextLeft, 0.3, {y:'-100%'}, {y:'10%'},'-=0.6')
-    .fromTo(nextRight, 0.3, {y:'-100%'}, {y:'-10%'},'-=0.8')
+    .fromTo(nextLeft, 0.3, {y:'-100%'}, {y:'10%'},'-=0.4')
+    .fromTo(nextRight, 0.3, {y:'-100%'}, {y:'-10%'},'-=0.5')
     .fromTo(currShadow, 0.3, { boxShadow: '0 5px 10px rgba(0,0,0,1)'}, {boxShadow: 'none'},'-=1')
     .fromTo(nextShadow, 0.3,  {boxShadow: 'none'}, { boxShadow: '0 5px 10px rgba(0,0,0,1)'})
     .set(nextLeft, {clearProps:'all'})//reset hover state so the links work
