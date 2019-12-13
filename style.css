@@ -92,10 +92,10 @@ nav img {
 
 .hero img {
   height: 500px;
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  transition: -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -137,6 +137,7 @@ nav img {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  cursor: pointer;
   overflow: visible;
 }
 
@@ -163,7 +164,6 @@ nav img {
 }
 
 .pages svg {
-  cursor: pointer;
   opacity: .5;
 }
 
