@@ -77,7 +77,7 @@ hamburger.addEventListener('click', ()=> {
 //mouse scroll
 document.addEventListener('wheel', throttle(scrollChange, 500));
 //touch scroll
-document.addEventListener("touchmove", throttle(scrollChange, 500));
+document.addEventListener("touchmove", throttle(scrollChange, 1500));
 
 
 function switchDots(dotNumber){
