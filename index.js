@@ -67,7 +67,7 @@ const navOpen = document.querySelector('.nav-open');
 
 const tl = new TimelineMax({paused: true, reversed: true});
 
-tl.to(navOpen, 0.5, {x:-40})
+tl.to(navOpen, 0.5, {x:0})
     .fromTo(hamburgerLines, 0.2, {stroke:'white'}, {stroke:'black'});
 
 hamburger.addEventListener('click', ()=> {
@@ -76,6 +76,8 @@ hamburger.addEventListener('click', ()=> {
 
 //mouse scroll
 document.addEventListener('wheel', throttle(scrollChange, 500));
+//touch scroll
+document.addEventListener("touchmove", throttle(scrollChange, 500));
 
 
 function switchDots(dotNumber){
