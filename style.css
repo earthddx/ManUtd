@@ -185,7 +185,7 @@ nav img {
   width: 40vh;
   height: 100vh;
   background: #333;
-  z-index: 1;
+  z-index: 5;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +250,7 @@ nav img {
 
 .logo,
 .menu {
-  z-index: 2;
+  z-index: 10;
 }
 
 .menu {
@@ -279,9 +279,63 @@ nav img {
   }
 }
 
-/*to finsih later...
-@media (max-width:){
-
+/*to finsih later...*/
+@media (max-width: 420px) {
+  nav img {
+    width: 15%;
+  }
+  .hero {
+    max-height: 80vh;
+  }
+  .hero img {
+    height: 500px;
+    position: relative;
+  }
+  .page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .details {
+    position: absolute;
+    z-index: 4;
+    width: 60vw;
+    bottom: 5%;
+    left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .details h1 {
+    font-size: 14px;
+  }
+  .details h2 {
+    font-size: 12px;
+  }
+  .details p {
+    font-size: 10px;
+    padding: 0;
+  }
+  .details .info {
+    display: none;
+  }
+  .pages > div {
+    display: none;
+  }
+  .nav-open {
+    width: auto;
+    opacity: .85;
+  }
 }
-*/
 /*# sourceMappingURL=style.css.map */
